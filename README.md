@@ -49,6 +49,44 @@ The reward function was iteratively refined to balance **speed, stability, and s
 
 ---
 
+## Training Experiments and Model Variants
+
+During training, multiple **model clones** were created from promising checkpoints to explore policy behavior under refined reward configurations and extended training durations.
+
+Each clone represents an independent continuation of training, allowing comparison across:
+- Reward convergence trends
+- Track completion stability
+- Behavioral smoothness
+- Sensitivity to reward shaping adjustments
+
+### Clone-Level Training Metrics
+
+The following reward graphs correspond to different cloned training runs.  
+They illustrate how policy behavior evolved across iterations and helped guide final model selection.
+
+#### Clone 1 – Stabilization-Oriented Training
+![Clone 1 Training Metrics](images/experiments/clone1-training-metrics.png)
+
+- Focused on reducing steering oscillation
+- Improved reward stability after early variance
+- Demonstrated consistent evaluation completion rates
+
+#### Clone 2 – Reward Sensitivity Exploration
+![Clone 2 Training Metrics](images/experiments/clone2-training-metrics.png)
+
+- Tested alternative reward weightings
+- Showed faster reward growth but higher variance
+- Used as a comparative reference rather than final selection
+
+#### Clone 3 – Extended Fine-Tuning
+![Clone 3 Training Metrics](images/experiments/clone3-training-metrics.png)
+
+- Continued training from a stabilized checkpoint
+- Improved completion consistency
+- Contributed directly to final model selection
+
+---
+
 ### 2. Training Trials and Iteration
 Multiple training trials were executed with varying configurations, including:
 - Adjustments to reward weightings
