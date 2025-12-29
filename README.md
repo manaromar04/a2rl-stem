@@ -112,7 +112,7 @@ Each clone represents an independent continuation of training, enabling comparis
 The following reward graphs document representative cloned training runs and illustrate how experimental results guided final model selection.
 
 #### Clone 1 – Stabilization-Oriented Training
-![Clone 1 Training Metrics](images/experiments/clone1-training-metrics.png)
+![Clone 1 Training Metrics](images/experiments/clone1-training-metrics.png.jpeg)
 
 - Focused on reducing steering oscillation
 - Achieved improved reward stability after early variance
@@ -120,14 +120,14 @@ The following reward graphs document representative cloned training runs and ill
 - Selected as the foundation for the final model
 
 #### Clone 2 – Reward Sensitivity Exploration
-![Clone 2 Training Metrics](images/experiments/clone2-training-metrics.png)
+![Clone 2 Training Metrics](images/experiments/clone2-training-metrics.png.jpeg)
 
 - Tested alternative reward weightings
 - Exhibited faster reward growth but higher variance
 - Used as a comparative reference rather than final selection
 
 #### Clone 3 – Extended Fine-Tuning
-![Clone 3 Training Metrics](images/experiments/clone3-training-metrics.png)
+![Clone 3 Training Metrics](images/experiments/clone3-training-metrics.png.jpeg)
 
 - Continued training from a stabilized checkpoint
 - Improved completion consistency across evaluations
